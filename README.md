@@ -1,12 +1,8 @@
-
-
-![image](https://github.com/user-attachments/assets/da802864-6a8a-43de-9ed0-be80223ddee0)
-
-
-
 # Go-HTMX Template Project
 
 This is a comprehensive template project that combines Go, HTMX, Templ, Tailwind CSS, and Echo to create modern, efficient web applications. It's designed to provide a solid starting point for developers looking to leverage these technologies in their projects.
+
+This repo started as a copy of [vinay1668/go-htmx](https://github.com/vinay1668/go-htmx). I like Vinay's stack, but want to make some modifications for my own template.
 
 ## Tech Stack
 
@@ -17,45 +13,46 @@ This is a comprehensive template project that combines Go, HTMX, Templ, Tailwind
 - **Echo**: A high-performance, minimalist Go web framework.
 
 ## Project Structure
+
 ```
-go-htmx/ 
-  ├── controllers 
-    ├── api  
-        ├── auth.go 
-        ├── dashboard.go 
-        └── profile.go
-    ├── web 
-        ├── auth.go  
-        ├── dashboard.go 
-        └── profile.go
-  ├── css/ 
-    ├── input.css  
-    └── output.css 
-  ├── routes
+go-htmx/
+  ├── controllers
     ├── api
-        ├── auth.go 
-        ├── dashboard.go    
-        └── profile.go 
-    ├── web
-        ├── auth.go 
+        ├── auth.go
         ├── dashboard.go
         └── profile.go
-    ├── routes.go 
+    ├── web
+        ├── auth.go
+        ├── dashboard.go
+        └── profile.go
+  ├── css/
+    ├── input.css
+    └── output.css
+  ├── routes
+    ├── api
+        ├── auth.go
+        ├── dashboard.go
+        └── profile.go
+    ├── web
+        ├── auth.go
+        ├── dashboard.go
+        └── profile.go
+    ├── routes.go
   ├── static
-    ├── go-htmx-logo.png 
-    └── templ.svg 
+    ├── go-htmx-logo.png
+    └── templ.svg
   ├── templates
-    ├── common 
-      ├── auth.templ 
+    ├── common
+      ├── auth.templ
       ├── dashboard.templ
       ├── login.templ
-      ├── signup.templ 
-      └── index.templ 
-  ├── .air.toml 
-  ├── go.mod 
-  ├── go.sum 
-  ├── main.go 
-  ├── Makefile 
+      ├── signup.templ
+      └── index.templ
+  ├── .air.toml
+  ├── go.mod
+  ├── go.sum
+  ├── main.go
+  ├── Makefile
   ├── tailwind.config.js
 ```
 
@@ -88,7 +85,7 @@ go-htmx/
 3. Install Air for live reloading: go install github.com/cosmtrek/air@latest
 4. Use the following commands to build and run the project:
    - `make css`: Builds the Tailwind CSS file.
-   -  `air` : Starts the application with live reloading using the configuration in .air.toml.
+   - `air` : Starts the application with live reloading using the configuration in .air.toml.
 
 ## Customization
 
